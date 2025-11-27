@@ -1,6 +1,7 @@
-# FyerPower Vanilla+ — Community Modpack
+# FyerPower's Vanilla+ Modpack
 
 A light, polished Vanilla+ modpack built exclusively for FyerPower’s Community Server.
+
 This pack focuses on keeping Minecraft’s classic feel while adding small, high-quality enhancements that improve gameplay without changing the core experience.
 
 Uploaded to CurseForge for easy installation and updates for all community members.
