@@ -33,3 +33,4 @@ The goal of this pack is to remain as close to vanilla as possible while adding:
 
 Performance optimizers, visual enhancements, shader support, and subtle quality-of-life mods all designed to keep the experience smooth and familiar.
 
+![Logo](logo.png "logo")
