@@ -56,16 +56,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.tag.outputs.tag_name }}
-          name: "FyerPower's Vanilla+ ${{ steps.tag.outputs.tag_name }}"
+          name: "FyerPower's Vanilla+ Modpack ${{ steps.tag.outputs.tag_name }}"
           draft: false
           prerelease: false
           files: |
             ./releases/fyerpowers-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-client.zip
             ./releases/fyerpowers-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-server.zip
           body: |
-            ## FyerPower's Community Vanilla+ ${{ steps.tag.outputs.tag_name }}
+            ## FyerPower's Vanilla+ Modpack ${{ steps.tag.outputs.tag_name }}
 
-            This release includes modpack exports for both CurseForge and Modrinth platforms.
+            This release includes modpack exports for the CurseForge platform.
 
             ### Download Options:
             - **CurseForge**: Download the `-client.zip` or `-server.zip` file and import it into your CurseForge launcher
