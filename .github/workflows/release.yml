@@ -22,7 +22,7 @@ jobs:
           # Download and install packwiz
           sudo apt update
           sudo apt install golang-go
-          go install github.com/packwiz/packwiz/cmd/packwiz@latest
+          go install github.com/packwiz/packwiz@latest
 
       - name: Verify packwiz installation
         run: packwiz --version
