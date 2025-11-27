@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+# Simple wrapper script for packwiz that runs commands in the pack subfolder
+# Usage: pw {command} - equivalent to running "packwiz {command}" in ./pack/
+
+# Check if pack directory exists
+if [ ! -d "pack" ]; then
+    echo "Error: 'pack' directory not found in current directory"
+    echo "Please run this script from the root of your modpack project"
+    exit 1
+fi
+
+# Change to pack directory and run packwiz with all provided arguments
+cd pack && packwiz "$@"

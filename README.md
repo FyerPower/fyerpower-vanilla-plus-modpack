@@ -19,6 +19,17 @@ go install github.com/packwiz/packwiz@latest
 
 Or download a pre-built binary from the [packwiz releases page](https://github.com/packwiz/packwiz/releases).
 
+### Setting up the pw script (recommended)
+
+For easier use, add the included `pw` script to your PATH:
+
+```bash
+echo 'export PATH="$PATH:$HOME/projects/modpack-forever-vanilla"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+After setup, you can use `pw` instead of `packwiz` for all commands, and it will automatically run in the correct directory.
+
 ## Adding Mods
 
 ### From CurseForge
@@ -26,22 +37,22 @@ Or download a pre-built binary from the [packwiz releases page](https://github.c
 To add a mod from CurseForge, use the following command:
 
 ```bash
-packwiz curseforge add <mod-name-or-url>
+pw curseforge add <mod-name-or-url>
 ```
 
 Examples:
 ```bash
 # Add by mod slug (from url)
-packwiz curseforge add jei
+pw curseforge add jei
 
 # Add by mod name
-packwiz curseforge add "JEI"
+pw curseforge add "JEI"
 
 # Add by CurseForge URL
-packwiz curseforge add https://www.curseforge.com/minecraft/mc-mods/jei
+pw curseforge add https://www.curseforge.com/minecraft/mc-mods/jei
 
 # Add by project ID
-packwiz curseforge add 238222
+pw curseforge add 238222
 ```
 
 ### From Modrinth
@@ -49,19 +60,19 @@ packwiz curseforge add 238222
 To add a mod from Modrinth, use:
 
 ```bash
-packwiz modrinth add <mod-name-or-url>
+pw modrinth add <mod-name-or-url>
 ```
 
 Examples:
 ```bash
 # Add by mod name
-packwiz modrinth add "sodium"
+pw modrinth add "sodium"
 
 # Add by Modrinth URL
-packwiz modrinth add https://modrinth.com/mod/sodium
+pw modrinth add https://modrinth.com/mod/sodium
 
 # Add by project ID
-packwiz modrinth add AANobbMI
+pw modrinth add AANobbMI
 ```
 
 ### Adding Local Mods
@@ -69,7 +80,7 @@ packwiz modrinth add AANobbMI
 For mods that aren't available on CurseForge or Modrinth:
 
 ```bash
-packwiz add <mod-file.jar>
+pw add <mod-file.jar>
 ```
 
 ## Managing Mods
@@ -78,26 +89,26 @@ packwiz add <mod-file.jar>
 
 Update all mods to their latest versions:
 ```bash
-packwiz update --all
+pw update --all
 ```
 
 Update a specific mod:
 ```bash
-packwiz update <mod-name>
+pw update <mod-name>
 ```
 
 ### Removing Mods
 
 Remove a mod from the modpack:
 ```bash
-packwiz remove <mod-name>
+pw remove <mod-name>
 ```
 
 ### Listing Mods
 
 View all mods in the modpack:
 ```bash
-packwiz list
+pw list
 ```
 
 ## Refreshing the Index
@@ -105,7 +116,7 @@ packwiz list
 After adding, removing, or updating mods, refresh the index:
 
 ```bash
-packwiz refresh
+pw refresh
 ```
 
 This updates the `index.toml` file with the current mod list and ensures everything is properly synchronized.
@@ -118,13 +129,13 @@ Players can install and update the modpack using packwiz:
 
 1. **Install the modpack:**
    ```bash
-   packwiz serve
+   pw serve
    ```
    Then in your Minecraft launcher, add the pack URL provided by the serve command.
 
 2. **Update an existing installation:**
    ```bash
-   packwiz update
+   pw update
    ```
 
 ### Export Options
@@ -133,21 +144,21 @@ Players can install and update the modpack using packwiz:
 
 Export the modpack as a CurseForge-compatible zip:
 ```bash
-packwiz curseforge export
+pw curseforge export
 ```
 
 #### Export to Modrinth Format
 
 Export the modpack as a Modrinth-compatible zip:
 ```bash
-packwiz modrinth export
+pw modrinth export
 ```
 
 #### Export to MultiMC/Prism Launcher
 
 Export for MultiMC or Prism Launcher:
 ```bash
-packwiz export
+pw export
 ```
 
 ### Hosting the Modpack
@@ -159,9 +170,9 @@ You can host your modpack for easy installation:
    - Enable GitHub Pages in repository settings
    - Players can install using: `https://<username>.github.io/<repository-name>/pack.toml`
 
-2. **Using packwiz serve (local development):**
+2. **Using pw serve (local development):**
    ```bash
-   packwiz serve
+   pw serve
    ```
    This starts a local server for testing.
 
@@ -169,21 +180,21 @@ You can host your modpack for easy installation:
 
 1. **Adding a new mod:**
    ```bash
-   packwiz modrinth add <mod-name>
-   packwiz refresh
+   pw modrinth add <mod-name>
+   pw refresh
    git add . && git commit -m "Add <mod-name>"
-   ```
+   ``` 
 
 2. **Updating mods:**
    ```bash
-   packwiz update --all
-   packwiz refresh
+   pw update --all
+   pw refresh
    git add . && git commit -m "Update mods"
    ```
 
 3. **Testing changes:**
    ```bash
-   packwiz serve
+   pw serve
    ```
    Test in a Minecraft instance, then commit changes.
 
@@ -205,7 +216,7 @@ Auto-generated file that lists all mods. Don't edit manually - use packwiz comma
 
 ### Common Issues
 
-1. **Mod conflicts:** Use `packwiz list` to check for incompatible mods
+1. **Mod conflicts:** Use `pw list` to check for incompatible mods
 2. **Missing dependencies:** packwiz usually handles these automatically, but check mod requirements
 3. **Version mismatches:** Ensure all mods support your Minecraft version
 
