@@ -32,8 +32,8 @@ jobs:
       - name: Export CurseForge modpack
         run: |
           cd pack
-          packwiz curseforge export --side client --output="fyerpowers-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.zip"
-          packwiz curseforge export --side server --output="fyerpowers-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.zip"
+          packwiz curseforge export --side client --output="forever-reimagined-${GITHUB_REF#refs/tags/}-client.zip"
+          packwiz curseforge export --side server --output="forever-reimagined-${GITHUB_REF#refs/tags/}-server.zip"
 
       - name: Create releases directory
         run: mkdir -p releases
@@ -60,8 +60,8 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            ./releases/fyerpowers-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-client.zip
-            ./releases/fyerpowers-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-server.zip
+            ./releases/forever-reimagined-${{ steps.tag.outputs.tag_name }}-client.zip
+            ./releases/forever-reimagined-${{ steps.tag.outputs.tag_name }}-server.zip
           body: |
             ## FyerPower's Vanilla+ Modpack ${{ steps.tag.outputs.tag_name }}
 
