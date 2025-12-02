@@ -41,8 +41,9 @@ jobs:
       - name: Update pack.toml version
         run: |
           # Update the version field in pack/pack.toml
-          sed -i 's/^version = ".*"/version = "${{ steps.version.outputs.version }}"/' pack/pack.toml
-          echo "Updated pack.toml version to ${{ steps.version.outputs.version }}"
+          VERSION="${{ steps.version.outputs.version }}"
+          sed -i "s/^version = \".*\"/version = \"$VERSION\"/" pack/pack.toml
+          echo "Updated pack.toml version to $VERSION"
           cat pack/pack.toml | grep "^version"
 
       - name: Export CurseForge modpack
