@@ -81,6 +81,11 @@ hash = "10916b552d45d65fbf872a5649c4d767cba25700b01e19918de0c0ae7962ba1c"
 metafile = true
 
 [[files]]
+file = "mods/enchantment-descriptions.pw.toml"
+hash = "5efa86151272ba0a9b018250831f7bea366ab8f9ab7dbabf7f1e839dd3195102"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
 hash = "f40522755246c7e247a3580bcd9b5e1a7ccea6c2133bcc686f7afe3aedaeb9ab"
 metafile = true
@@ -223,6 +228,11 @@ metafile = true
 [[files]]
 file = "mods/polymer.pw.toml"
 hash = "46d9e7e8ab17717bff19ce7fd4f9ee08838b2b3e5ffb30f9218407e8ad23871d"
+metafile = true
+
+[[files]]
+file = "mods/prickle.pw.toml"
+hash = "8840a2cce53e7e051879a9561fbfd43bb5a40d85cb73edd27646ec8e280b0f0a"
 metafile = true
 
 [[files]]
