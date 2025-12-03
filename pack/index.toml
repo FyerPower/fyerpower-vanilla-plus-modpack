@@ -181,6 +181,11 @@ hash = "5617b01a4019b3599defb317367094051d003f00953b01d364a2866c36597af5"
 metafile = true
 
 [[files]]
+file = "mods/magnetic-enchantment.pw.toml"
+hash = "53146db7ba2afe72bd8faa00e960921bfb3cda85bdc410210e7b75eedc01513b"
+metafile = true
+
+[[files]]
 file = "mods/magnum-torch.pw.toml"
 hash = "97425f2b0e4570c4eceb47de285235deda5a97ab2720a10f1baf62666b30d8d7"
 metafile = true
