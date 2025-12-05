@@ -187,6 +187,16 @@ hash = "ee241918d84c7b600433d718daaaf28a4290db25f13f78359608a0522c933a67"
 metafile = true
 
 [[files]]
+file = "mods/just-zoom.pw.toml"
+hash = "16ed270a60d4751af2745ebece1f50c8488799f86f1623dfbc6a155d8ce21de3"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "7e57ad6b081aff8be050e3e72938cda571345862c3b587c6802d68c5c2095e45"
+metafile = true
+
+[[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "8036cf2bc316b514ce60085189ab2324ad2339f465b0cdf001581f89c18a8cbd"
 metafile = true
