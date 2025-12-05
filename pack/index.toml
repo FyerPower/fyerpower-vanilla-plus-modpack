@@ -383,3 +383,8 @@ metafile = true
 file = "shaderpacks/miniature-shader.pw.toml"
 hash = "db8a6692c585b2447adcde26e653eac4bb3fde9171b2d68c8e3388ef8a7ba7ce"
 metafile = true
+
+[[files]]
+file = "shaderpacks/solas-shader.pw.toml"
+hash = "eed2921c6237abe839d6926a096ae8e065237792af7cb1e211c46be7622e380c"
+metafile = true
