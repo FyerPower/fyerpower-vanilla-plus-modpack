@@ -403,6 +403,11 @@ hash = "6a8a09f6a8611a9d14a97dd8153bd01b9b76bb07ba924b118bb9365ec8d8a9b9"
 metafile = true
 
 [[files]]
+file = "resourcepacks/fusion-3d-items.pw.toml"
+hash = "e43f0b9e7ac02b779d36594c526fe330fbc64ddd10c0c1896f922acd9a0766b0"
+metafile = true
+
+[[files]]
 file = "resourcepacks/fusion-connected-blocks.pw.toml"
 hash = "b5395a87ff650ccd9253568779f85deebf8186645219d4c6461f78645f03f0bd"
 metafile = true
