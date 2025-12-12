@@ -37,6 +37,10 @@ file = "config/xaerominimap.txt"
 hash = "b323c892190e9a4e870fa34117eeaa72a712e7ce1d6c7ab92e219b6d31d6e47f"
 
 [[files]]
+file = "configureddefaults/options.txt"
+hash = "d789b5c164b38115754d471e789dd11def0c99d0e919bcf7aba0dfd8751afc0d"
+
+[[files]]
 file = "mods/almanac-lib.pw.toml"
 hash = "59d6b21e065b929ef80920c304d583536dab35e363acc44e8fc228387cd6f1d7"
 metafile = true

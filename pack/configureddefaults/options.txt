@@ -1,0 +1,15 @@
+guiScale:2
+renderDistance:12
+simulationDistance:8
+resourcePacks:["vanilla","fabric","file/Fusion 3D Items v1.0.1 for Minecraft 1.20-1.21.8.zip","file/Fusion Block Transitions v1.0.3 for Minecraft 1.20-1.21.8.zip","file/Fusion Connected Glass v1.0.1 for Minecraft 1.20-1.21.8.zip","file/Fusion Emissive Ores v1.0.2 for Minecraft 1.20-1.21.8.zip","cullleaves:smartleaves"]
+soundCategory_master:0.5
+soundCategory_music:0.2
+soundCategory_record:1.0
+soundCategory_weather:0.2
+soundCategory_block:1.0
+soundCategory_hostile:1.0
+soundCategory_neutral:1.0
+soundCategory_player:1.0
+soundCategory_ambient:1.0
+soundCategory_voice:1.0
+soundCategory_ui:1.0
